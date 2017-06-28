@@ -23,3 +23,6 @@ alias zshconf="nvim ~/.zshrc"
 alias vimrc="nvim ~/.vimrc"
 alias tmuxconf="nvim ~/.tmux.conf"
 
+alias nis="npm install --save "
+alias nisd="npm install --save-dev"
+alias ngs="ng serve -hmr -e=hmr --proxy proxy-config.json"
