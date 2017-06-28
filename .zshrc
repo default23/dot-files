@@ -19,7 +19,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=2'
 bindkey '^ ' autosuggest-accept
 
 # Aliases
-alias zshconf="vim ~/.zshrc"
-alias vimrc="vim ~/.vimrc"
-alias tmuxconf="vim ~/.tmux.conf"
+alias zshconf="nvim ~/.zshrc"
+alias vimrc="nvim ~/.vimrc"
+alias tmuxconf="nvim ~/.tmux.conf"
 

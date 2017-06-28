@@ -10,6 +10,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 "Programming && Navigation Plugins
+Plug 'ryanoasis/vim-devicons'
 Plug 'herringtondarkholme/yats.vim'
 Plug 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 Plug 'Valloric/YouCompleteMe'
@@ -38,6 +39,8 @@ call plug#end()
 "-------------------------------------------------------------------------------------
 "---------			Environment settings			     					 ---------
 "-------------------------------------------------------------------------------------
+set encoding=utf-8
+
 set nocompatible
 set relativenumber
 set t_Co=256
