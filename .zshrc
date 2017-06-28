@@ -26,3 +26,9 @@ alias tmuxconf="nvim ~/.tmux.conf"
 alias nis="npm install --save "
 alias nisd="npm install --save-dev"
 alias ngs="ng serve -hmr -e=hmr --proxy proxy-config.json"
+
+# Git 
+alias gpush="git push"
+alias gadd="git add ./"
+
+gcommit() { git commit -am $1; }
