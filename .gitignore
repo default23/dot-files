@@ -1,0 +1,7 @@
+*
+!.gitignore
+!.zshrc
+!.vimrc
+!.tmux.conf
+!install-environment.sh
+!install-environment-global.sh
