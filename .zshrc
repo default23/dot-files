@@ -30,5 +30,6 @@ alias ngs="ng serve -hmr -e=hmr --proxy proxy-config.json"
 # Git 
 alias gpush="git push"
 alias gadd="git add ./"
+alias gpull="git pull"
 
 gcommit() { git commit -am $1; }
