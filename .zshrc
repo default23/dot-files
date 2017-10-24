@@ -18,6 +18,9 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=2'
 # Bindings
 bindkey '^ ' autosuggest-accept
 
+# System
+alias vimrc="vim ~/.zshrc";
+ 
 # Aliases
 alias zshconf="nvim ~/.zshrc"
 alias vimrc="nvim ~/.vimrc"
