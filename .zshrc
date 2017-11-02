@@ -18,11 +18,8 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=2'
 # Bindings
 bindkey '^ ' autosuggest-accept
 
-# System
-alias vimrc="vim ~/.zshrc";
- 
 # Aliases
-alias zshconf="nvim ~/.zshrc"
+alias zshrc="nvim ~/.zshrc"
 alias vimrc="nvim ~/.vimrc"
 alias tmuxconf="nvim ~/.tmux.conf"
 
@@ -37,3 +34,5 @@ alias gpull="git pull"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 gcommit() { git commit -am $1; }
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
