@@ -35,4 +35,11 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 
 gcommit() { git commit -am $1; }
 
+dropPritunl() {
+
+	sudo route delete 185.188.181.61;
+	sudo route delete 185.188.181.67;
+	sudo route delete 185.128.105.61;
+}
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
