@@ -1,0 +1,16 @@
+#!/bin/sh
+
+#
+# Git hook для предотвращения создания комитов
+# файлов содержащих TODO 
+#
+
+matches=$(git diff --cached | grep -E '\+.*?TODO')
+
+if [ "$matches" != "" ]
+then
+        echo "'TODO' tag is detected."
+        echo "Please fix it before committing."
+        echo "  ${matches}"
+        exit 1
+fi
