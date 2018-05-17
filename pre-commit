@@ -1,11 +1,11 @@
 #!/bin/sh
 
-matches=$(git diff  --cached -- . ':!*pre-commit' -- . ':!*README.md' | grep -E '\+.*?(TODO|FIXME)')
+lines=$(git diff  --cached -- . ':!*pre-commit' -- . ':!*README.md' | grep -E '\+.*?(TODO|FIXME)')
 
-if [ "$matches" != "" ]
+if [ "$lines" != "" ]
 then
-        echo "'TODO' or 'FIXME' tag is detected."
-        echo "Please fix it before committing."
-        echo "  ${matches}"
+        echo "\033[31m 'TODO' or 'FIXME' comments detected."
+        echo "\033[31m Please resolve it before committing."
+        echo "  ${lines}"
         exit 1
 fi
