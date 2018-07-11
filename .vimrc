@@ -4,6 +4,8 @@
 call plug#begin('~/.vim/plugged')
 
 "Vim GUI plugins
+Plug 'stephpy/vim-yaml'
+Plug 'pearofducks/ansible-vim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
@@ -49,6 +51,9 @@ syntax on
 
 let g:neodark#use_256color = 1
 let g:neodark#background='normal'
+
+let g:ansible_unindent_after_newline = 1
+
 
 colorscheme neodark 
 set background=dark

@@ -44,12 +44,11 @@ alias gb="git branch"
 
 gcommit() { git commit -am $1; }
 gc() { git checkout $1  }
+gcb() { git checkout -b $1  }
+gbd() { git branch -d $1  }
 
 dropPritunl() {
-
-	sudo route delete 185.188.181.61;
-	sudo route delete 185.188.181.67;
-	sudo route delete 185.128.105.61;
+    sudo sh ~/dropPritunl.sh
 }
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
