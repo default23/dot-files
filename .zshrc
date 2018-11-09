@@ -1,6 +1,10 @@
 export ZSH=/Users/easy/.oh-my-zsh
 export DEFAULT_USER=easy
 export EDITOR=nvim
+export NPM_PACKAGES="/usr/local/npm_packages"
+export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+export PATH="$NPM_PACKAGES/bin:$PATH"	
+export GOPATH=/Users/easy/GolangWorkspace
 
 ZSH_THEME="agnoster"
 
