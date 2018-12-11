@@ -15,7 +15,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'herringtondarkholme/yats.vim'
 Plug 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
-Plug 'Valloric/YouCompleteMe'
 Plug 'leafgarland/typescript-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-fugitive'
